@@ -1,0 +1,1256 @@
+// Imports 
+
+@import gridlayout.sass
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700|Yesteryear')
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oswald')
+
+
+//Keyframe animations
+
+@keyframes sending-icon-animation
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(360deg)} 
+@keyframes form-status-display
+	0%{opacity:  1}
+	100%{opacity: 0}
+//Global Styling 
+
+* 
+	margin:0
+	padding:0
+	border:0
+	box-sizing: border-box
+	transition: all 0.3s
+
+
+a 
+	text-decoration: none
+	color: #fff
+body 
+	overflow-x: hidden
+
+#mobile-menu
+    height: 100vh
+    width: 100%
+    background-color: #333
+    z-index: 10000000
+    position: fixed
+    padding-top: 5%
+    background: url("../IMAGES/mobile-menu.png")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+    right: -100%
+
+    #fade
+    	width: 100%
+    	height: 100vh
+    	position: absolute
+    	background-color: #111
+    	top: 0
+    	opacity: 0.75
+    	z-index: 3
+
+    #menu-content
+    	position: absolute
+    	z-index: 4
+    	width: 100%
+
+	    ul 
+	      margin-left: 8.33%
+	      padding: 5% 0
+
+	      #close-menu
+	        text-align: right
+	        font-size: 16px
+	        border-bottom: 0
+	        color: #fff
+	        margin-bottom: 40px
+
+	        button 
+	        	color:#333
+	        	outline: none
+	        	background-color: #fff
+	        	padding: 2% 5%
+
+				
+	      li
+	        border-bottom:0px solid #fff
+	        list-style: none
+	        padding-bottom: 10px
+	        text-align: center
+	        font-size: 19px
+	        margin-bottom: 30px
+	        letter-spacing: 0.8px
+
+	        a 
+	          color: #fff
+	    #social-media
+	      ul 
+	        
+	        li 
+	          text-align: center
+	          // border:1px solid #333
+	          float: right
+	          padding-right: 11%
+	          border:0
+
+#main-wrapper
+	// font-family: 'Roboto', sans-serif
+	font-family: 'Montserrat', sans-serif
+	height: auto
+	position: relative
+	overflow: hidden
+	// border:1px solid #333
+	// overflow: hidden
+
+	
+	
+	.header-container,.header-2-container
+		height: 550px 
+		// background-color: red
+		position: relative
+
+
+		#header-image
+			height: 100%
+			position: absolute
+			z-index: 2
+			background: url("../IMAGES/Featured-image-indian-food.jpg")
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+		#header-fade 
+			height: 100%
+			position: absolute
+			z-index: 3
+			background-color: #000
+			opacity: 0.73
+		#header-content
+			height: 100%
+			position: absolute
+			z-index: 4
+			#info-bar
+				background-color: #D62828
+				padding: 1% 1% 0.9% 1%
+				#social-media
+					ul 
+						list-style: none
+						margin-left: 10%
+						
+						li 
+							text-align: center
+							// border:1px solid #333
+							float: left
+							padding-right: 15%
+				#contact-info
+					float: right
+					color:#fff
+					#phone-number,#location-city
+						
+
+						.contact-info-logo
+							height: 20px
+							margin-top: -0px
+						.contact-info-content
+							text-align: center
+							font-size: 12px
+							padding-top: 2px
+						#location-icon
+							background: url("../IMAGES/placeholder-icon-1.png")
+							background-position: right
+							background-size: contain
+							background-repeat: no-repeat
+						#contact-icon
+							background: url("../IMAGES/phone-call.png")
+							background-position: right
+							background-size: contain
+							background-repeat: no-repeat
+
+							
+					
+
+
+			navbar 
+				color: #fff
+				// border: 1px solid #fff
+				margin-top: 2%
+				position: relative
+				// width: 86%
+				// z-index: 1000000
+
+				a 
+					text-decoration:none
+					color: #fff
+				ul 
+					list-style: none
+			
+				#parathahaat-logo
+					padding-left: 5%
+					font-size: 25px
+					font-family: 'Yesteryear', cursive
+					margin-top: -8px
+
+				#menu 
+					margin-left: 30%
+					ul 
+						// border:1px solid #fff
+						// margin-left: 
+						li 
+							text-align: left
+							font-weight: 700
+							letter-spacing: 0.8px
+							font-size: 15px
+							margin-left: 0%
+
+				
+			#responsiveNav
+				position: fixed
+				background-color: #221F1F
+				padding: 4% 0
+				top: 0px
+				
+
+				ul 
+					list-style: none
+
+					#parathahaat-logo-written
+						float: left
+
+						a 
+							text-decoration: none
+							color: #fff
+							font-family: 'Yesteryear', cursive
+							font-size: 18px
+							display: inline
+							padding-left: 15px
+					#menu-button
+						float: right
+						button 
+							color:#333
+							font-weight: 700
+							font-size: 14.5px
+							border: 2px solid #fff
+							padding: 5% 8%
+							text-align: center
+							margin-right: 15px
+							line-height: 1.2
+							outline: none
+							background-color: #fff
+						// background-color: #fff
+		
+
+
+			#header-container
+				height: 0 
+				// border:1px solid #fff
+				margin-top: 6%
+
+				#parathahaat-logo
+					height: 250px
+					// border: 1px solid #fff
+					margin-left: 0
+					background: url("../IMAGES/paratha-header-image.png")
+					background-size: contain
+					background-position: center left
+					background-repeat: no-repeat
+
+
+			#header-tag-line
+				color:#fff
+				text-align: left
+				margin-top: 0.5%
+				padding: 6.5% 6.5%
+
+				h5
+					font-size: 26px
+					letter-spacing: 0.8px
+					font-weight: 400
+					// color: #A6D52E
+
+				h3
+					font-size: 30px
+					font-weight: 700
+					color: #fff
+					letter-spacing: 1.8px
+					margin-bottom: 16px
+				// font-family: 'Oswald', sans-serif
+
+
+			#order-online-button-container
+				text-align-last: left
+				margin-top: 8.8%
+				
+				a
+					text-decoration: none
+					color: #fff
+					border:2px solid #fff
+					padding: 1% 4.5% 
+					font-size: 20px
+					font-weight: 700
+
+	#find-us-div-container
+		position: relative
+
+
+		#find-us-div
+			background-color: #D62828
+			width: 100%
+			// opacity: 0.23
+			height: 100px
+			position: absolute
+			z-index: 5
+
+			#find-us-tagline
+				h4
+					color:#fff
+					padding: 4% 0
+					padding-left: 15%
+					font-size: 22px
+					font-weight: 700
+					letter-spacing: 0.8px
+			#find-us-link	
+
+				#find-us-icon
+					margin-left: 25%
+					margin-top:  20px
+					height: 50px
+					background: url("../IMAGES/google.png")
+					background-size: contain
+					background-position: right
+					background-repeat: no-repeat
+				#find-us-button	
+					margin-top: 39px
+					margin-left: 30px
+					a 
+						text-decoration: none
+						color: #fff
+						font-size: 16px
+						border:2px solid #fff
+						padding: 4% 6%
+
+
+		
+	.header-2-container 
+		height: 400px
+		#header-content 
+			#header-2-main-content
+				#header-tag-line
+					text-align: center
+
+					h3 	
+						font-size: 42px
+
+
+
+
+	#about-parathahaat
+		height: auto 
+		// border: 1px solid #333
+		position: relative
+		z-index: 4
+		padding: 7% 0 1%
+		
+
+		#discover-parathahaat
+			height: 100%
+			// border: 1px solid red
+			position: relative
+
+
+			#discover-parathahaat-content-container
+				margin-top:00px  
+				padding: 10% 5%
+				text-align: left
+				// border:1px solid green
+				width: 100%
+				margin-left: 6%
+				position: relative
+
+
+				#discover-parathahaat-head
+					font-size: 24px 
+					color: #D62828
+					letter-spacing: 0.8px
+					line-height: 1.4
+					font-weight: 700
+					margin-bottom: 20px
+				#discover-parathahaat-content
+					padding: 0 15% 0 0%
+					letter-spacing: 0.8px
+					line-height: 1.4
+					margin-bottom: 30px
+	
+				#know-more-button
+					a
+						text-decoration: none
+						color: #D62828
+						border:2px solid #D62828
+						padding:0.9% 4.5%
+						font-weight: bold
+						border-radius: 50px
+
+
+		#discover-parathahaat-image
+			height: 250px
+			// border:1px solid green
+			background: url("../IMAGES/about-us.png")
+			background-position: center
+			background-size: contain
+			background-repeat: no-repeat
+			margin-top: 6%
+			margin-left: 8.33%
+
+	#discover-menu
+		height: auto
+		padding-bottom: 6%
+		padding-top: 2%
+		#dicover-menu-header
+			color: #D62828
+			text-align: center
+
+			h6 
+				font-size: 25px
+				font-weight: 700
+				letter-spacing: 0.8px
+
+		#order-now-button
+			text-align: center
+			a 
+				text-decoration: none
+				color:#D62828
+				border: 3px solid #D62828
+				padding: 0.5% 4%
+				font-weight: 700
+				letter-spacing: 0.8px
+
+
+			
+
+	#featured-section
+		// height: 500px
+		position: relative
+		padding-bottom: 5.5%
+		padding-top: 1.5%
+
+		#featured-section-content-container
+			position: relative
+			z-index: 7
+			text-align: center
+
+			#featured-section-image
+				background: url("../IMAGES/cooker-green.png")
+				background-position: center
+				background-size: contain
+				height: 50px
+				background-repeat: no-repeat
+				margin-bottom: 1%
+			#featured-section-heading
+				text-align: center
+				h4
+					font-size: 25px
+					letter-spacing: 0.8px
+
+			#featured-section-content
+				margin-left: 13%
+				margin-top: 3%
+
+				.featured-section-content-tile
+					padding:2% 4%
+					// border: 1px dashed  #A6D52E
+
+					.featured-section-content-tile-count
+						padding-bottom: 0px
+						h6 
+							font-size: 32px
+							color: #D62828
+					.featured-section-content-tile-heading
+						padding-bottom: 20px
+						h6 
+							font-size: 32px
+							color: #D62828
+					.featured-section-content-tile-data
+						letter-spacing: 0.8px 
+
+	#book-table-container
+		height: auto
+		background-color: #221F1F
+		padding-bottom: 7%
+
+		#book-table-inner
+			height: auto
+			// border: 1px dotted #fff
+			margin-left: 8.33%
+			margin-top: 100px
+
+			#time-section-container
+				height: auto
+				padding-bottom: 2.5%
+				// border: 1px solid red
+
+				background-color: #171414
+				#time-section
+					height: auto
+					padding-bottom: 6%
+					border:1px solid #3E3E3E
+					margin-left:8.33%
+					margin-top: 6%
+					text-align: center
+
+					#time-section-heading	
+						font-family: 'Yesteryear', cursive
+						color: #A6D52E
+						padding: 3%
+						h5
+							font-size: 32px
+
+					#time-section-image
+						background: url("../IMAGES/food.png")
+						background-position: center
+						background-size: contain
+						background-repeat: no-repeat
+						height: 50px
+						margin-bottom: 20px
+
+					.days
+						color: #A6D52E
+						margin-bottom: 15px
+						margin-top: 30px
+						h6
+							font-size: 14px 
+							letter-spacing: 0.8px
+					.time-container
+						color:#fff
+						margin-bottom: 40px
+						.time 
+							h6
+								letter-spacing: 0.8px
+					#mobile-container
+						border-top:1px solid #3E3E3E
+						margin-left: 8.33%
+						padding-top: 10px
+					.mobile
+						color: #fff
+						margin-bottom: 10px
+						h6
+							letter-spacing: 0.8px
+
+
+
+			#form-section-container	
+				height: 100%
+				// border:1px solid green
+
+				#booking-form-container
+					height: 400px
+					background-color: #fff
+					text-align: center
+
+					#booking-form-container-heading
+						font-family: 'Yesteryear', cursive
+						color: #A6D52E
+						margin-top: 55px
+						h6
+							font-size: 32px
+					#booking-form-container-subheading
+						margin-bottom:10px 
+						h6
+							font-size: 14px
+							letter-spacing: 0.8px 
+
+					#booking-form
+						margin-top: 40px
+						padding-left: 6.33%
+						form
+							input 
+								margin-left: 4.33%
+								border-bottom: 1px solid #3E3E3E
+								margin-bottom:40px
+								font-size: 13px
+								padding: 5px
+							input:focus
+								outline: none
+							select 
+								margin-left: 4.33%
+								border-bottom: 1px solid #3E3E3E
+								font-size: 13px
+								padding: 5px
+							select:focus
+								outline: none
+							#bookNowButton
+								background-color: #171414
+								color: #fff
+								padding: 1% 2%
+								margin-left: 33.8%
+								margin-top: 40px
+								border-radius: 50px
+							#sending-icon-booking
+								height: 20px 
+								// width: 35px 
+								margin-top: 47.5px
+								// border: 1px solid #333
+								margin-left: 20px
+								background: url("../IMAGES/refresh-button.png")
+								background-position: center
+								background-size: contain
+								background-repeat: no-repeat
+								animation: sending-icon-animation 0.7s linear infinite
+								display: none
+							.empty-field
+								border-bottom: 1px solid #FF6B6B
+							#bookingStatus
+								height: 45px
+								margin-top: 10px
+								border-radius: 2px
+								// border: 1px solid #333
+								display: none
+								margin-left: 4%
+							.success
+								background-color: #5DD39E
+								color:#fff
+								font-size: 14px
+								flex-weight: 700
+								letter-spacing: 0.8px
+								padding-top: 2%
+								text-align: center
+							.fail
+								background-color: #FF6B6B
+								color:#fff
+								font-size: 14px
+								flex-weight: 700
+								letter-spacing: 0.8px
+								padding-top: 2%
+								text-align: center
+
+							
+
+				#booking-terms-container
+					height: 100px
+					background-color: #171414
+
+					#booking-terms-inner
+						width: 97%
+						height: 60px
+						margin-top: 10px
+						border:1px solid #3E3E3E
+						padding: 0% 4%
+
+						h6 
+							font-size: 10px
+							line-height: 1
+							color: #A9AAAB
+							letter-spacing: 0.8px
+	#extra-section	
+		height: 200px
+		position: relative
+		#extra-section-image
+			height: 100%
+			position: absolute
+			z-index: 2
+			background: url("../IMAGES/Featured-image-indian-food.jpg")
+			background-position: center
+			background-size: cover
+			background-repeat: no-repeat
+
+		#extra-section-fade
+			height: 100%
+			position: absolute
+			z-index: 3
+			background-color: #000
+			opacity: 0.73
+		#extra-section-content
+			height: 100%
+			position: absolute
+			z-index: 4
+			text-align: center
+			#extra-section-content-heading
+				padding-top: 40px	
+				h6
+					font-size: 21px
+					color: #fff
+					letter-spacing: 0.8px
+					padding: 0.8% 15%
+					line-height: 1.28
+					text-align: left
+					font-weight: 700
+					line-height: 1.4
+			#extra-section-content-button
+				margin-top: 85px
+				a 
+					text-decoration: none
+					color:#fff
+					font-size: 16px
+					border:2px solid #fff
+					padding:1.5% 5.5%
+					letter-spacing: 0.8px
+					font-weight: 700
+	#customer-reviews-container
+		height: auto
+		padding: 5% 0 10% 0
+
+		#customer-review-heading
+			text-align: center
+			h4
+				font-size: 22px
+				letter-spacing: 0.8px
+				color: #D62828
+				font-weight: 700
+		#customer-review-wrapper
+			position: relative
+			#customer-review-content
+				margin-left: 16.66%
+				// border: 1px solid #333
+				padding:2% 8%
+				text-align: center
+				position: relative
+
+				#customer-image
+					margin-bottom: 20px
+					img 
+						width: 100px
+						height: 100px
+						// border: 1px solid #333
+						border-radius: 50%
+						margin-bottom: 20px
+					#customer-name 
+						font-size: 16px
+						font-weight: 700
+				#customer-review 
+					p 
+						font-size: 14px
+						letter-spacing: 0.8px
+			.crtoggle
+				position: absolute
+				width: 40px
+				height: 40px
+				// border: 1px solid #333
+				top: 90px
+				font-size: 38px
+				color:#212121
+				cursor: pointer
+			#back-button	
+				left: 20%
+				background: url("../IMAGES/back.png")
+				background-position: center
+				background-size: contain
+				background-repeat: no-repeat
+			#forward-button
+				right: 20%
+				background: url("../IMAGES/next.png")
+				background-position: center
+				background-size: contain
+				background-repeat: no-repeat
+
+		#more-reviews
+			text-align: center
+
+			a 
+				text-decoration: none
+				color: #D62828
+				font-size: 16px
+				letter-spacing: 0.8px
+				font-weight: 700
+
+
+
+
+
+	footer
+		height: auto
+		background-color: #D62828
+		position: relative
+	
+		#footer-tilted-div 
+			background-color: #D62828
+			width: 120%
+			border-bottom: 2px solid #D62828
+			// opacity: 0.23
+			height: 250px
+			position: absolute
+			top: -40px
+			transform: rotate(3deg)
+			z-index: 5
+			left: -5%
+
+		.footer-section
+			height: 100%
+			// border:1px solid #333
+			position: relative
+			z-index: 6
+
+
+		#footer-section-one
+			// background-color: #171414
+			color:#fff
+			padding:4.5%
+			padding-top: 04.5%
+			padding-left: 5%
+			position: relative
+
+			#footer-section-one-social-container
+				#footer-section-one-logo
+					height: 100px
+					background: url("../IMAGES/DemoLogo.png")
+					background-position: center
+					background-size: contain
+					background-repeat: no-repeat
+					border: 1px solid #333
+				#follow-us 
+					font-size: 16px
+					letter-spacing: 0.8px 
+					margin-top: 10px
+					padding-left: 8%
+
+				#social-media
+					margin-top: 15px
+					ul 
+						list-style: none
+						
+						li 
+							text-align: left
+							// border:1px solid #333
+							float: left
+							padding-right: 11%
+					
+			#footer-section-one-about-container
+				padding-left: 20%
+				margin-top: 0px
+				ul 
+					list-style: none
+
+					li 
+						width: 100%
+						display: block
+						margin-bottom: 15px
+
+						a 
+							text-decoration: none
+							color: #fff
+							font-size: 16px
+							letter-spacing: 0.8px
+						a:hover 	
+							opacity: 0.8
+
+		#footer-section-two
+			// border: 1px dashed #333
+			padding: 4% 0 0 0%
+
+			#footer-address
+				height: auto
+				
+				position: relative
+				color:#fff
+				#location-icon 	
+					height: 60px
+					background: url("../IMAGES/placeholder-icon-1.png")
+					background-position: center left
+					background-size: contain
+					background-repeat: no-repeat
+					margin-top: -10px
+				#location-content 	
+					letter-spacing: 0.8px
+					font-size: 15px
+					line-height: 1.5
+					padding-left: 20px
+					strong 
+						font-size: 18px
+						margin-bottom: 5px
+
+				
+
+			#footer-map-content
+				height: 100%
+				position: relative
+				z-index: 3
+				color:#fff
+				// border: 1px solid #333
+				padding-top: 0
+				
+				#subscribe-now-heading
+					margin-left: 22%
+					margin-bottom: 15px
+
+					h6
+						font-size: 18px
+						letter-spacing: 0.2px
+						line-height: 0
+
+
+				#subscribe-now-form-container
+					margin-left: 22%
+
+					input 
+						height: 40px
+						padding: 10px
+						font-size: 12px
+						color:#333
+						text-align: center
+						font-weight: 700
+						margin-bottom: 5px
+						border-radius: 2px
+					input:focus
+						outline: none
+
+					button 
+						height: 40px
+						background-color: #2D2D2D
+						font-weight: 700
+						border-radius: 2px
+					.empty-field
+						border: 1px solid #FF6B6B
+					#subscribeStatus
+						height: 50px
+						color:#fff
+						position: absolute
+						top: 200px
+						left: 20%
+						display: none
+
+					.success
+						background-color: #5DD39E
+						color:#fff
+						font-size: 14px
+						flex-weight: 700
+						letter-spacing: 0.8px
+						padding-top: 2.23%
+						text-align: center
+					.fail
+						background-color: #FF6B6B
+						color:#fff
+						font-size: 14px
+						flex-weight: 700
+						letter-spacing: 0.8px
+						padding-top: 2.23%
+						text-align: center
+		#footer-image
+			height: 50px
+			width: 100%
+			position: absolute
+			background: url("../IMAGES/footerImage.png")
+			background-position: center bottom
+			background-size: contain
+			background-repeat: no-repeat
+			z-index: 10
+			bottom: -6px
+
+	
+
+	#about-us-container
+		padding: 6% 11.52% 1.5% 11.52%
+		#about-us-heading
+			text-align: center	
+			h6 
+				color: #D62828
+				font-size: 38px
+				letter-spacing: 0.8px
+				margin-bottom: 40px
+		#about-us-content
+			text-align: justify
+			p 
+				letter-spacing: 0.8px
+				line-height: 1.7
+				font-size: 14.5px
+	
+	#about-us-order-now-button
+		text-align: center
+		padding-bottom: 12%
+		margin-top: -3%
+
+
+		a 
+			text-decoration: none
+			color:#fff
+			font-size: 16px
+			letter-spacing: 0.8px
+			background-color:#D62828
+			padding: 1% 4%
+
+	#contact-us-form-container
+		margin: 0% 0% 7.5% 0
+		text-align: center
+		position: relative
+
+
+
+
+
+		#form-container
+			// border:1px solid #333
+			text-align: left
+			// padding-left: 7%
+			background-color: #D62828
+			padding: 3% 0 3% 4.33%
+			position: absolute
+			right: 10%
+			z-index: 40
+			top: -40px
+
+			.heading
+				h6
+					font-size: 17px
+					letter-spacing: 0.8px
+					margin-bottom: 0px
+					font-weight: 700
+					color: #fff
+					margin-bottom: 35px
+			#feedback-from-container
+
+				#feedback-form
+					input 
+						height: 40px
+						border: 2px solid #fff
+						margin-bottom: 20px
+						padding: 10px
+						font-size: 12px
+						letter-spacing: 0.8px
+						color: #221F1F
+						font-weight: 700
+						border-radius: 2px
+					textarea
+						height: 100px
+						border: 2px solid #fff
+						margin-bottom: 30px
+						padding: 10px
+						font-size: 12px
+						resize: none
+						letter-spacing: 0.8px
+						color: #221F1F
+						border-radius: 2px
+						font-weight: 700
+					.empty-field
+						border: 2px solid #fff
+
+
+
+					button
+						height: 40px
+						color:#fff		
+						background-color: #333
+						letter-spacing: 0.8px
+						font-weight: 700
+						border-radius: 2px
+						font-size: 16px
+
+					#sending-icon
+						height: 20px 
+						// width: 35px 
+						margin-top: 7.5px
+						// border: 1px solid #333
+						margin-left: 20px
+						background: url("../IMAGES/refresh-button.png")
+						background-position: center
+						background-size: contain
+						background-repeat: no-repeat
+						animation: sending-icon-animation 0.7s linear infinite
+						display: none
+					#formStatus
+						height: 45px
+						margin-top: 25px
+						border-radius: 2px
+						// border: 1px solid #333
+						display: none
+					.success
+						background-color: #5DD39E
+						color:#fff
+						font-size: 14px
+						flex-weight: 700
+						letter-spacing: 0.8px
+						padding-top: 2.23%
+						text-align: center
+					.fail
+						background-color: #FF6B6B
+						color:#fff
+						font-size: 14px
+						flex-weight: 700
+						letter-spacing: 0.8px
+						padding-top: 2.23%
+						text-align: center
+
+		#address-container
+			// border:1px solid #333
+			text-align: left
+			// padding-left: 7%
+			padding: 3% 0 3% 12%
+
+			.heading
+				h6
+					font-size: 17px
+					letter-spacing: 0.8px
+					margin-bottom: 0px
+					font-weight: 700
+					color: #333
+					margin-bottom: 35px
+			#address-container-content
+				#location,#phone,#mail
+					margin-bottom: 25px
+					letter-spacing: 0.8px
+				#phone
+					margin-bottom: 40px
+				.address-icon
+					height: 35px 
+
+				#location-icon
+					background: url("../IMAGES/placeholder.png")
+					background-position: center left
+					background-size: contain
+					background-repeat: no-repeat
+				#phone-icon
+					background: url("../IMAGES/phone-icon.png")
+					background-position: center left
+					background-size: contain
+					background-repeat: no-repeat
+				#mail-icon
+					background: url("../IMAGES/envelope-icon.png")
+					background-position: center left
+					background-size: contain
+					background-repeat: no-repeat
+	#columns
+		// height: 600PX
+		padding: 0% 5% 
+		column-width: 20%
+		column-gap: 10px
+	  	width: 100%
+		// max-width: 100vw
+		margin: 20px auto
+		column-count: 4
+
+
+		figure 
+			width: 100% 
+			display: inline-block
+			padding: 1.5%
+			background-color: #fff
+			// border:2px solid #efefef
+			margin: 10px 10px 20px 10px
+			// position: absolute
+			top: 0
+			column-break-inside : avoid
+			transition: opacity 0.2s
+			cursor: pointer
+
+
+
+			img 
+				height: 200px 
+				width: 100%
+				margin-bottom: 10px
+
+			figcaption
+				border-top: 1px dashed #D62828
+				padding: 2% 2% 4% 2%
+				letter-spacing: 0.8px
+				text-align: center
+				color: #D62828
+				font-size: 17px
+				
+#light-box-container
+	position: fixed
+	height: 100vh
+	width: 100vw
+	z-index: 1000
+	padding: 2.7% 0 0 8.33%
+	background-color: #333
+	opacity: 1
+	display: none
+
+	#light-box
+		border:1px solid #efefef
+		// height: 100%
+		position: relative
+		
+
+		figure 
+			padding: 1.5%
+			background-color: #fff
+			border:2px solid #efefef
+			// margin: 10px 10px 20px 10px
+			display: inline-block
+			width: 100%
+			margin: 0 auto
+
+
+			img
+				// height: auto
+				max-height: 70vh
+				width: 100%
+				object-fit: cover
+				// align-content: middle
+				margin-bottom: 20px
+				cursor: pointer
+				// border: 2px dotted #333
+
+
+			figcaption
+				border-top: 2px solid #efefef
+				padding: 1% 2% 2% 0%
+				text-align: left
+				color: #333
+				font-size:17px
+				letter-spacing: 0.4px
+		.toggle-button
+			color:#fff
+			position: absolute
+			font-size:60px
+			font-weight: 700
+			top: 35%
+			z-index: 100000
+			cursor: pointer
+			background-color: #333
+			line-height: 1.1
+			padding: 0 1%
+			opacity: 0.8
+		.toggle-button:hover
+			opacity: 0.5
+
+		#back-button
+			left: 4%
+		#forward-button
+			right: 4%
+		#close-light-box
+			top: 5%
+			right: 2%
+			font-size: 30px
+#main-wrapper
+	// display: none
+@import tablet.sass
+@import mobile.sass
+@import landscapeMode.sass
+
+
+
+
+
+			
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+		
+
+		
+
+
+
+
+
+
+				
+
+
+
+	

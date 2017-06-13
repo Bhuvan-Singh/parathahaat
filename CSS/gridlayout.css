@@ -1,0 +1,175 @@
+@media (min-width: 1200px) {
+  .l1, .l2, .l3, .l4, .l5,
+  .l6, .l7, .l8, .l9, .l10,
+  .l11, .l12 {
+    float: left;
+  }
+  .l1 {
+    width: 8.33%;
+  }
+  .l2 {
+    width: 16.66%;
+  }
+  .l3 {
+    width: 25%;
+  }
+  .l4 {
+    width: 33.33%;
+  }
+  .l5 {
+    width: 41.66%;
+  }
+  .l6 {
+    width: 50%;
+  }
+  .l7 {
+    width: 58.33%;
+  }
+  .l8 {
+    width: 66.66%;
+  }
+  .l9 {
+    width: 75%;
+  }
+  .l10 {
+    width: 83.33%;
+  }
+  .l11 {
+    width: 91.66%;
+  }
+  .l12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .m1, .m2, .m3, .m4, .m5,
+  .m6, .m7, .m8, .m9, .m10,
+  .m11, .m12 {
+    float: left;
+  }
+  .m1 {
+    width: 8.33%;
+  }
+  .m2 {
+    width: 16.66%;
+  }
+  .m3 {
+    width: 25%;
+  }
+  .m4 {
+    width: 33.33%;
+  }
+  .m5 {
+    width: 41.66%;
+  }
+  .m6 {
+    width: 50%;
+  }
+  .m7 {
+    width: 58.33%;
+  }
+  .m8 {
+    width: 66.66%;
+  }
+  .m9 {
+    width: 75%;
+  }
+  .m10 {
+    width: 83.33%;
+  }
+  .m11 {
+    width: 91.66%;
+  }
+  .m12 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 364px) and (max-width: 768px) {
+  .s1, .s2, .s3, .s4, .s5,
+  .s6, .s7, .s8, .s9, .s10,
+  .s11, .s12 {
+    float: left;
+  }
+  .s1 {
+    width: 8.33%;
+  }
+  .s2 {
+    width: 16.66%;
+  }
+  .s3 {
+    width: 25%;
+  }
+  .s4 {
+    width: 33.33%;
+  }
+  .s5 {
+    width: 41.66%;
+  }
+  .s6 {
+    width: 50%;
+  }
+  .s7 {
+    width: 58.33%;
+  }
+  .s8 {
+    width: 66.66%;
+  }
+  .s9 {
+    width: 75%;
+  }
+  .s10 {
+    width: 83.33%;
+  }
+  .s11 {
+    width: 91.66%;
+  }
+  .s12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 364px) {
+  .x1, .x2, .x3, .x4, .x5,
+  .x6, .x7, .x8, .x9, .x10,
+  .x11, .x12 {
+    float: left;
+  }
+  .x1 {
+    width: 8.33%;
+  }
+  .x2 {
+    width: 16.66%;
+  }
+  .x3 {
+    width: 25%;
+  }
+  .x4 {
+    width: 33.33%;
+  }
+  .x5 {
+    width: 41.66%;
+  }
+  .x6 {
+    width: 50%;
+  }
+  .x7 {
+    width: 58.33%;
+  }
+  .x8 {
+    width: 66.66%;
+  }
+  .x9 {
+    width: 75%;
+  }
+  .x10 {
+    width: 83.33%;
+  }
+  .x11 {
+    width: 91.66%;
+  }
+  .x12 {
+    width: 100%;
+  }
+}
